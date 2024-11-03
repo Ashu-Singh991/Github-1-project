@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+ <!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JS Event</title>
+</head>
+<body>
+   <h1>learning javascript Event</h1> 
+   <div id = "events_block"></div>
+   <p>
+    <p id="inputPlace"> </p>
+   <input type="text" id="text-input" placeholder="type here...">
+   <p>
+    <button id="btn">Click Here</button>
+  
+    <script src="index.js"></script>
+</body>
+</html>  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="toggleDarkMode">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>A showcase of my work and skills</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+        <button class="filter-btn" data-category="app">App Development</button>
+        <div class="projects-grid">
+            <div class="project-item" data-category="web">
+                <h3>Project 1: Web Development</h3>
+                <p>Description of Project 1</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-item" data-category="app">
+                <h3>Project 2: App Development</h3>
+                <p>Description of Project 2</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <h3>Job Title 1</h3>
+                <p>Company Name, Year</p>
+                <p>Brief description of job responsibilities.</p>
+            </li>
+            <li>
+                <h3>Job Title 2</h3>
+                <p>Company Name, Year</p>
+                <p>Brief description of job responsibilities.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>Degree 1</h3>
+                <p>Institution Name, Year</p>
+            </li>
+            <li>
+                <h3>Degree 2</h3>
+                <p>Institution Name, Year</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <!--<input type="text" id="name" name="name" required>-->
+          <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formFeedback" class="hidden">Your message has been sent!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <div class="social-media">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
